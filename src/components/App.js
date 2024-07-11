@@ -48,6 +48,7 @@ const App = () => {
           data-testid="input1"
           placeholder="Enter first name"
           value={name1}
+          name="name2"
           onChange={(e) => setName1(e.target.value)}
         />
         <input
@@ -55,20 +56,19 @@ const App = () => {
           data-testid="input2"
           placeholder="Enter second name"
           value={name2}
+          name="name2"
           onChange={(e) => setName2(e.target.value)}
         />
         <button
           data-testid="calculate_relationship"
           onClick={handleCalculate}
         >
-          Calculate Relationship
+          Calculate Relationship Future
         </button>
         <button
           data-testid="clear"
           onClick={handleClear}
-        >
-          Clear
-        </button>
+        >Clear</button>
       </div>
       <h3 data-testid="answer">{result}</h3>
     </div>
