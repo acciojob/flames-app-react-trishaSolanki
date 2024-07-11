@@ -1,6 +1,7 @@
 import React, {Component, useState} from "react";
 import '../styles/App.css';
 
+
 const App = () => {
   const [name1, setName1] = useState('');
   const [name2, setName2] = useState('');
