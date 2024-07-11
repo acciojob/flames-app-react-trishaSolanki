@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, {Component, useState} from "react";
+import '../styles/App.css';
 
 const App = () => {
   const [name1, setName1] = useState('');
@@ -41,6 +41,7 @@ const App = () => {
 
   return (
     <div className="container">
+      <h1>FLAMES Game</h1>
       <div className="form">
         <input
           type="text"
